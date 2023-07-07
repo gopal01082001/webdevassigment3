@@ -1,0 +1,19 @@
+Q.1 What is a Media Query in CSS, and what is its purpose?
+A media query in CSS is a feature that allows you to apply different styles or rules to a web page based on various conditions, such as the device's screen size, resolution, orientation, or other characteristics. It enables you to create responsive designs that adapt to different devices and screen sizes.
+
+The purpose of media queries is to provide a way to customize the appearance and layout of a web page based on the capabilities and constraints of the user's device. By using media queries, you can create a single HTML document that can be presented differently on different devices, optimizing the user experience for each device.
+
+Media queries consist of a media type and one or more expressions that define the conditions under which the associated styles should be applied. The media type specifies the category of the device, such as screen, print, or speech. The expressions within the media query evaluate various features of the device, such as its width, height, resolution, or orientation.
+
+For example, you can define a media query to apply different styles to a web page when viewed on a mobile device with a small screen size compared to a desktop computer. By specifying different styles for different screen sizes, you can ensure that your website is accessible and visually appealing across a wide range of devices.
+
+Here's an example of a media query in CSS:
+css
+Copy code
+@media screen and (max-width: 600px) {
+  /* Styles applied when the screen width is 600px or less */
+  body {
+    font-size: 14px;
+  }
+}
+In this example, the styles inside the media query will be applied when the device has a screen width of 600 pixels or less. You can define multiple media queries with different conditions to cover various device characteristics and create responsive designs.

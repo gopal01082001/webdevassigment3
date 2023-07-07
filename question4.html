@@ -1,0 +1,27 @@
+Q.4 What is the purpose of using Media Queries for Print Media?
+Media queries for print media serve the purpose of customizing the layout and styling of a web page specifically for print output. When a web page is printed, it often needs to be presented in a different format compared to its on-screen appearance. Media queries for print allow you to apply specific styles and adjustments to ensure the printed version of your web page is well-formatted, legible, and optimized for the printed medium.
+Here are some purposes and considerations for using media queries for print media:
+Page Layout: Media queries for print enable you to modify the layout of your web page when it is printed. You can adjust the page size, margins, and page breaks to ensure the content fits well on printed pages. For example, you may want to remove unnecessary navigation menus, headers, or sidebars to optimize the use of space on the printed page.
+Font Sizes and Colors: Printed materials often require different font sizes and colors compared to on-screen presentations. Media queries for print allow you to specify appropriate font sizes, colors, and contrasts that enhance readability when the content is printed on paper. You may want to increase the font size and use high-contrast colors to ensure legibility in print.
+Backgrounds and Borders: Background colors, gradients, and borders that are visually appealing on-screen may not translate well when printed. Media queries for print allow you to adjust or remove background colors and borders to conserve ink and improve the overall appearance of the printed page.
+Images and Graphics: You can control the printing of images and graphics using media queries. For example, you may choose to hide decorative images or background images that are not necessary in the printed version. You can also optimize the resolution and size of images to ensure they print clearly and efficiently.
+Page Headers and Footers: Media queries for print provide the ability to add specific headers and footers to printed pages. You can include information like page numbers, document titles, copyright notices, or other relevant details that are commonly expected in printed materials.
+Here's an example of a media query specifically targeting print media:
+@media print {
+  /* CSS rules for print media */
+  body {
+    font-size: 12pt;
+    color: black;
+  }
+.header,
+  .footer {
+    display: none;
+  }
+}
+In this example, the styles within the @media print media query will be applied only when the web page is being printed. The CSS rules adjust the font size to 12pt, set the text color to black, and hide the .header and .footer elements.
+By utilizing media queries for print media, you can optimize the appearance and layout of your web page when it is printed, ensuring that the printed version is well-suited for its intended purpose and provides a high-quality user experience in print format.
+
+
+
+
+

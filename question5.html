@@ -1,0 +1,34 @@
+Q.5 What is the purpose of the orientation media feature?
+The purpose of the orientation media feature in CSS is to target and apply specific styles based on the orientation of the device's display. It allows you to customize the presentation of your web page depending on whether the device is in a portrait or landscape orientation.
+
+The orientation media feature provides two possible values:
+
+portrait: This value is applied when the device's height is greater than its width, indicating a vertical or portrait orientation.
+
+landscape: This value is applied when the device's width is greater than its height, indicating a horizontal or landscape orientation.
+
+By using the orientation media feature, you can adjust the layout, positioning, or other visual aspects of your web page to better suit the device's current orientation. This can be particularly useful for responsive designs that need to adapt to different screen orientations.
+
+Here's an example of how the orientation media feature can be used in a media query:
+
+css
+Copy code
+@media (orientation: landscape) {
+  /* CSS rules for landscape orientation */
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (orientation: portrait) {
+  /* CSS rules for portrait orientation */
+  body {
+    background-color: lightpink;
+  }
+}
+In this example, the first media query with (orientation: landscape) targets devices in landscape orientation, applying the specified CSS rules. The second media query with (orientation: portrait) targets devices in portrait orientation, applying different CSS rules.
+By leveraging the orientation media feature, you can ensure that your web page is visually optimized and properly adapted for both portrait and landscape orientations, providing a better user experience based on the device's display orientation.
+
+
+
+
